@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+.banner {
+  height: 200px;
+  /* background: red; */
+}
+.banner_bg {
+  background: url("./assets/space_bg.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 900px) {
+  .rocket-banner-img {
+    height: 150px !important;
+    width: 150px !important;
+    margin: 0;
+  }
+}
+.rocket-banner-img {
+  width: 500px;
+  height: 500px;
+  margin-left: 150px;
+  animation: dance 10s infinite;
+}
+
+@keyframes dance {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.search-section input:focus {
+  border: none !important;
+  outline: none;
+}
+.container-wrap {
+  padding: 0 150px;
+}
+.lead-title {
+  /* font-size: 10px !important; */
+}
+.lead-title span {
+  color: #feb200;
+}
+.search-section {
+  padding: 30px;
+  background: #feb200;
+}
+.search-btn {
+  border: 2px solid #000;
+  border-radius: 7px;
+  background: #000 !important;
+  color: #fff;
+  height: 40px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discoverBtn {
+  background: #feb200;
+  font-weight: bold;
+  padding: 15px 40px;
+}
+.discoverBtn:hover {
+  background: #feb20077;
+}
+.service-section {
+  padding: 50px 0;
+}
+.title-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.service {
+  padding: 10px;
+  border-radius: 7px;
+  /* background: pink; */
+  /* height: 200px; */
+}
+.rocket-img-bg img {
+  height: 150px;
+  width: 150px;
+}
+.rocket-img-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.company {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #feb200;
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 4px 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.service-info {
+}
+.rocket-name {
+  font-size: 12px;
+  color: #feb200;
+  font-weight: 700;
+}
+.country {
+  font-size: 12px;
+  color: #fff;
+}
+.desc {
+  color: #fff;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.view-more {
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+  background-color: #feb200;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-weight: 700;
+  margin: 10px 0;
+  border: 2px solid #feb200;
+  text-transform: uppercase;
+}
+.view-more:hover {
+  border: 2px solid #feb200;
+  background: transparent;
+}
+
+/* modal */
